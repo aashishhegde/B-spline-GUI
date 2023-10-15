@@ -184,9 +184,6 @@ def on_drag(event):
         xlist[index] = event.xdata
         ylist[index] = event.ydata
         point_list[index].set_data(xlist[index], ylist[index])
-        print(xlist[index])
-        print(ylist[index])
-
         note_list[index].set_position([xlist[index],ylist[index]+0.1])
         mesh.set_data(xlist,ylist)
         xu=np.dot(xlist,N)
